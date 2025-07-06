@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  box-sizing: border-box;
+  font-family: system-ui;
+  background-color: #eee;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+.heading-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 1.5rem;
+  /* margin-right: 2rem; */
+  line-height: 2.1;
+  margin-left: 2rem;
+}
+.heading {
+  font-size: 3.5rem;
+  margin: 0;
+  margin-top: 2rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 6.2rem;
+  margin-left: 2rem;
+  text-align: left;
+  color: rgb(192, 68, 23);
+}
+
+.parent-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.country {
+  height: 50rem;
+  height: auto;
+  width: 30rem;
+  padding: 0;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.312);
+  border-radius: 1rem;
+  margin-left: 10rem;
+  margin-right: 3rem;
+}
+
+.country img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.country-info {
+  color: rgba(0, 0, 0, 0.79);
+  margin: 2.5rem;
+  margin-left: 3.2rem;
+}
+.country-name {
+  font-size: 3.1rem;
+}
+.continent {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: rgba(104, 102, 102, 0.894);
+  font-weight: 700;
+}
+.emoji-span {
+  margin-right: 0.8rem;
+  font-size: 2.5rem;
+  opacity: 1;
+}
+.population-text,
+.language,
+.currency,
+.capital {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.language {
+  margin: 0;
+}
+.currency {
+  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+}
+
+.locate-me,
+.locate-me-initial {
+  align-self: center;
+  border-radius: 2.5rem;
+  height: 5.5rem;
+  width: 23rem;
+  margin-left: 3rem;
+  padding: 1.3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* margin-top: 4rem; */
+  font-size: 1.7rem;
+  background-color: rgba(128, 0, 255, 0.996);
+
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.719);
+  border: none;
+  letter-spacing: 0.03rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgba(111, 0, 255, 0.996);
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+}
+.locate-me-initial {
+  height: 5.5rem;
+  width: 23rem;
+  margin-left: 3rem;
+  /* width: 40rem; */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.46);
+  margin-top: 0;
+}
+select {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.719);
+}
+#country-select {
+  padding: 1rem;
+  font-size: 1.7rem;
+  border-radius: 2.5rem;
+  background-color: rgb(10, 133, 1);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  /* height: 5.5rem;*/
+  width: 23rem;
+  color: white;
+  cursor: pointer;
+  margin-left: 5.1rem;
+}
+option {
+  padding: 0.2rem;
+  font-size: 1.7rem;
+}
+
+.or {
+  font-size: 3rem;
+  margin: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 6.5rem;
+  color: rgb(251, 65, 32);
+  text-shadow: 0px 2px 2px rgb(55, 53, 53);
+  /* color: rgb(255, 38, 0); */
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 2rem; */
+  margin-left: 4rem;
+}
+#country-select:focus-within {
+  overflow-x: visible;
+  width: 30rem;
+  .locate-me,
+  .locate-me-initial {
+    margin-left: 9rem;
+  }
+}
+.select-wrapper {
+  width: 30rem;
+}
+/* #country-select::-webkit-scrollbar { */
+/* width: 0.6rem; */
+/* } */
+/* #country-select::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+}
+
+.select-wrapper {
+  width: 40rem;
+  height: 5.5rem;
+  overflow: hidden;
+  position: relative;
+  transition: height 0.2s ease;
+}
+
+.select-wrapper:focus-within {
+  height: 17rem;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+#country-select {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  transition: none;
+  border-radius: 2.5rem;
+} */
+footer {
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0.5rem;
+  margin-left: 46%;
+}
