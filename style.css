@@ -229,14 +229,14 @@ footer {
     font-size: 7rem;
     margin-left: calc(12rem + 23%);
     margin-top: 2rem;
-    top: 5rem;
+    top: 4rem;
   }
   .heading-1 {
     line-height: 2;
     font-size: 11rem;
     margin-left: 27%;
     margin-top: 0.7rem;
-    top: 5rem;
+    top: 4rem;
   }
   .span {
     /* margin-left: 9rem; */
@@ -247,12 +247,12 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow-y: hidden;
   }
   .country {
     height: auto;
     width: 50vw;
     margin: 0;
-    margin-top: 20rem;
     margin-bottom: 0;
   }
   .country-name {
@@ -277,12 +277,8 @@ footer {
     padding-top: 0;
   }
   .button {
-    /* margin-top: 10rem; */
-    /* box-sizing: border-box;
-    margin: 0;
-    padding: 0; */
-    height: 700px;
-    margin: 0;
+    /* height: 500px; */
+    margin-top: 10rem;
   }
   .locate-me,
   .locate-me-initial {
@@ -313,11 +309,13 @@ footer {
     padding-top: 25px;
     padding-bottom: 25px;
     border-radius: 4rem;
-
+    padding-top: 30px;
+    padding-bottom: 30px;
     align-content: center;
   }
   #country-select:focus-within {
     /* overflow-x: visible; */
+    display: none;
     height: 350px;
     margin-top: 0rem;
     width: 700px;
@@ -328,7 +326,7 @@ footer {
   footer {
     font-size: 3rem;
     text-align: center;
-    margin-left: 30%;
+    margin-left: 40%;
     margin-bottom: 1.8rem;
   }
 }
