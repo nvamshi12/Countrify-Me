@@ -20,6 +20,7 @@ body {
   margin-top: 1.5rem;
   /* margin-right: 2rem; */
   line-height: 2.1;
+  font-size: 5rem;
   margin-left: 2rem;
 }
 .heading {
@@ -221,4 +222,113 @@ footer {
   bottom: 0;
   margin-bottom: 0.5rem;
   margin-left: 46%;
+}
+
+@media (max-width: 1000px) {
+  .heading {
+    font-size: 7rem;
+    margin-left: calc(12rem + 23%);
+    margin-top: 2rem;
+    top: 5rem;
+  }
+  .heading-1 {
+    line-height: 2;
+    font-size: 11rem;
+    margin-left: 27%;
+    margin-top: 0.7rem;
+    top: 5rem;
+  }
+  .span {
+    /* margin-left: 9rem; */
+  }
+  .parent-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .country {
+    height: auto;
+    width: 50vw;
+    margin: 0;
+    margin-top: 20rem;
+    margin-bottom: 0;
+  }
+  .country-name {
+    font-size: 6.1rem;
+  }
+  .continent {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+  .emoji-span {
+    font-size: 5.5rem;
+  }
+  .population-text,
+  .language,
+  .currency,
+  .capital {
+    font-size: 4.5rem;
+    padding: 0.5rem;
+  }
+  .currency {
+    padding-bottom: 2rem;
+    padding-top: 0;
+  }
+  .button {
+    /* margin-top: 10rem; */
+    /* box-sizing: border-box;
+    margin: 0;
+    padding: 0; */
+    height: 700px;
+    margin: 0;
+  }
+  .locate-me,
+  .locate-me-initial {
+    font-size: 4rem;
+
+    width: auto;
+    height: max-content;
+    padding: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 4rem;
+    margin-left: 0;
+  }
+  .or {
+    font-size: 4rem;
+    text-align: center;
+    margin-left: 2rem;
+  }
+  .select-wrapper {
+    margin: 0;
+    width: auto;
+  }
+  #country-select {
+    font-size: 4rem;
+    width: 500px;
+    height: min-content;
+    padding: 40px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-radius: 4rem;
+
+    align-content: center;
+  }
+  #country-select:focus-within {
+    /* overflow-x: visible; */
+    height: 350px;
+    margin-top: 0rem;
+    width: 700px;
+  }
+  option {
+    font-size: 4rem;
+  }
+  footer {
+    font-size: 3rem;
+    text-align: center;
+    margin-left: 30%;
+    margin-bottom: 1.8rem;
+  }
 }
