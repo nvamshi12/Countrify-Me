@@ -5,13 +5,20 @@
 }
 html {
   font-size: 62.5%;
+  overflow: hidden;
 }
 body {
   box-sizing: border-box;
   font-family: system-ui;
   background-color: #eee;
+  overflow: hidden;
   /* display: flex; */
   /* flex-direction: column; */
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .heading-1 {
   position: fixed;
@@ -254,6 +261,7 @@ footer {
     width: 50vw;
     margin: 0;
     margin-bottom: 0;
+    margin-top: 5rem;
   }
   .country-name {
     font-size: 6.1rem;
@@ -315,10 +323,10 @@ footer {
   }
   #country-select:focus-within {
     /* overflow-x: visible; */
-    display: none;
-    height: 350px;
+    /* display: none; */
+    /* height: 350px;
     margin-top: 0rem;
-    width: 700px;
+    width: 700px; */
   }
   option {
     font-size: 4rem;
